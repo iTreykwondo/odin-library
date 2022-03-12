@@ -128,3 +128,19 @@ button[type="submit"] {
   min-width: 300px;
   box-shadow: rgba(0, 200, 151, 1) 0px 1px 0px, rgba(0, 200, 151, 1) 0px 0px 8px;
 }
+
+.card img {
+  cursor: pointer;
+}
+
+.card .status-btn {
+  padding: 4px 8px;
+  background-color: #00c897;
+  font-family: inherit;
+  border: 1px solid black;
+}
+
+.card .status-btn:hover {
+  color: white;
+  cursor: pointer;
+}
