@@ -9,3 +9,9 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
