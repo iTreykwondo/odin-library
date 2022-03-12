@@ -65,7 +65,6 @@ function createBookCard(book) {
     let index = Array.from(div.parentNode.children).indexOf(div);
     myLibrary.splice(index, 1);
     div.parentNode.removeChild(div);
-    console.log(index);
   });
 
   readStatus.addEventListener("click", () => {
