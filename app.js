@@ -40,9 +40,9 @@ function createBookCard(book) {
   let readStatus = document.createElement("button");
 
   myLibrary.forEach((book) => {
-    title.textContent = book.title;
-    author.textContent = book.author;
-    pageCount.textContent = book.pageCount;
+    title.textContent = `Title: ${book.title}`;
+    author.textContent = `Author: ${book.author}`;
+    pageCount.textContent = `Page Count: ${book.pageCount}`;
     readStatus.textContent = `Read Status: ${
       book.readStatus ? "Read" : "Not Read"
     }`;
