@@ -11,6 +11,10 @@ function Book(title, author, pageCount, readStatus) {
   this.readStatus = readStatus;
 }
 
+Book.prototype.toggleReadStatus = function () {
+  this.readStatus = !this.readStatus;
+};
+
 function addToLibrary(book) {
   let titleInput = document.querySelector("#title");
   let authorInput = document.querySelector("#author");
