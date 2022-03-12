@@ -29,6 +29,8 @@ body {
 .sidebar .title {
   margin-top: 23px;
   padding-left: 12px;
+  display: flex;
+  gap: 16px;
 }
 
 .form {
