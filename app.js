@@ -2,18 +2,19 @@ const mainContainer = document.querySelector(".main");
 const form = document.querySelector(".form");
 
 let myLibrary = [];
-let book;
 
-function Book(title, author, pageCount, readStatus) {
-  this.title = title;
-  this.author = author;
-  this.pageCount = pageCount;
-  this.readStatus = readStatus;
+class Book {
+  constructor(title, author, pageCount, readStatus) {
+    this.title = title;
+    this.author = author;
+    this.pageCount = pageCount;
+    this.readStatus = readStatus;
+  }
+
+  toggleReadStatus() {
+    this.readStatus = !this.readStatus;
+  }
 }
-
-Book.prototype.toggleReadStatus = function () {
-  this.readStatus = !this.readStatus;
-};
 
 function addToLibrary(book) {
   let titleInput = document.querySelector("#title");
