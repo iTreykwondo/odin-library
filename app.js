@@ -70,10 +70,10 @@ function createBookCard(book) {
 
   readStatus.addEventListener("click", () => {
     let index = Array.from(div.parentNode.children).indexOf(div);
-    readStatus.textContent = `Read Status: ${
-      !book.readStatus ? "Read" : "Not Read"
-    }`;
     myLibrary[index].toggleReadStatus();
+    readStatus.textContent = `Read Status: ${
+      book.readStatus ? "Read" : "Not Read"
+    }`;
   });
 
   return book;
